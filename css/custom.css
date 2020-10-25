@@ -24,10 +24,16 @@
     font-size: 16px;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.teks-link{
+    font-size: 16px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none !important;
 }
 
-.tulisan:hover{
+.teks-link:hover{
 	font-size: 16px;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
