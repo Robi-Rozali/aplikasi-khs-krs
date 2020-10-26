@@ -31,18 +31,19 @@
                 <h4 class="judul">Masukan Akun Anda</h4>
                 <form method="post" action="<?php echo base_url('auth/login') ?>" class="user">
                   <div class="form-group mt-4">
-                      <div class="text-left"><label for="Username">Username</label></div>
+                      <div class="text-left">
+                        <label for="Username">Username</label></div>
                       <input type="text" class="form-control form-control-user " id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Masukan Username Anda" name="username">
                   </div>
                   <div class="form-group text-left">
                       <label for="Username">Password</label>
                       <input type="text" class="form-control form-control-user" id="exampleInputPassword" placeholder="Masukan Password Anda" name="password">
                   </div>
-                  <div class="rememberpass m-t-1 text-left">
+                  <div class="rememberpass text-left">
                     <input type="checkbox" name="rememberusername" id="rememberusername" value="1"  />
                     <label for="rememberusername">Remember username</label>
                 </div>
-                  <button type="submit" class="btn btn-primary btn-block" id="loginbtn">Log in</button>
+                  <button type="submit" class="btn btn-light btn-block" id="loginbtn">Log in</button>
               </div>
               
             </div>
