@@ -37,6 +37,12 @@
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
+.text-dashboard{
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .teks-hitam{
     font-size: 17px;
