@@ -38,6 +38,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.teks-hitam{
+    font-size: 17px;
+    color: #3d3e48;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .teks-link{
     font-size: 16px;
     color: #fff;
