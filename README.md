@@ -1,7 +1,3 @@
-# aplikasi-khs-krs
-aplikasi-krs-khs-kp
+# aplikasi khs krs
 
-# hehe boi
-mata mu
-
-# boyyy
+Kerja Praktek
