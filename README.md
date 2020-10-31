@@ -1,2 +1,3 @@
-# aplikasi-khs-krs
-aplikasi-krs-khs-kp
+# aplikasi khs krs
+
+Kerja Praktek
