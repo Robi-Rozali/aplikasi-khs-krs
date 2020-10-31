@@ -84,8 +84,8 @@
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Nilai:</h6>
-            <a class="collapse-item" href="khs.html">Nilai Persemester</a>
-            <a class="collapse-item" href="nilaisementara.html">Daftar Nilai Sementara</a>
+            <a class="collapse-item" href="utilities-color.html">Nilai Persemester</a>
+            <a class="collapse-item" href="utilities-border.html">Daftar Nilai Sementara</a>
           </div>
         </div>
       </li>
@@ -111,7 +111,7 @@
         <div id="collapsestatuspembayaran" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Nilai:</h6>
-            <a class="collapse-item" href="pembayaran.html">Riwayat Pembayaran </a>
+            <a class="collapse-item" href="utilities-color.html">Riwayat Pembayaran </a>
             <a class="collapse-item" href="utilities-border.html">Tagihan/Invoice</a>
           </div>
         </div>
@@ -231,7 +231,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="card shadow">
-                <div class="card-header">Riwayat Pembayaran</div>
+                <div class="card-header">Perubahan (KRS)</div>
                 <div class="card-body">
 
                   <div class="form-group row">
@@ -269,26 +269,31 @@
                           <thead>
                             <tr>
                               <th>No</th>
-                              <th>Jenis Transaksi</th>
-                              <th>Kewajiban</th>
-                              <th>%</th>
-                              <th>Tot. Kewajiban</th>
-                              <th>Jumlah Bayar</th>
-                              <th>Tunggakan</th>
+                              <th>Kode</th>
+                              <th>Mata Kuliah</th>
+                              <th>SKS</th>
+                              <th class="text-center">Batalkan</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
                               <td>1</td>
-                              <td>SKS</td>
-                              <td>1.710.000</td>
-                              <td>1.500.000</td>
-                              <td>#</td>
-                              <td>xxxxxx</td>
-                              <td>xxxxxx</td>
+                              <td>SI1044</td>
+                              <td>Kerja Praktek</td>
+                              <td>2</td>
+                              <td>
+                                <div class="form-check text-center">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  </div>
+                                </td>
                             </tr>
                           </tbody>
                         </table>
+                        <hr class="sidebar-divider">
+                        <div class="">
+                            <button type="submit" class="btn btn-primary mb-2">Simpan</button>
+                            <button type="submit" class="btn btn-light mb-2">Batal</button>
+                        </div>
                       </div>
                     </div>  
                   </div>
