@@ -43,6 +43,11 @@
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+.tulisan-logo{
+    font-size: 10px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .teks-hitam{
     font-size: 17px;
