@@ -33,8 +33,11 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.html">
-        <img src="../img/logo.png" class="d-inline" style="width: 200px" alt="logo">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon">
+          <img src="../img/stmik.png" class="d-inline" style="width: 50px" alt="logo">
+        </div>
+        <div class="sidebar-brand-text text-left tulisan-logo">Sistem Informasi Akademik</div>
       </a>
     
 
@@ -43,7 +46,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="dashboard.html">
+        <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -65,12 +68,10 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Custom Components:</h6>
-            <a class="collapse-item" href="#">Jadwal Kuliah</a>
-            <a class="collapse-item" href="#">KHS</a>
-            <a class="collapse-item" href="#">KRS</a>
-            <a class="collapse-item" href="#">Mata Kuliah</a>
-            <a class="collapse-item" href="#">Registrasi</a>
-            <a class="collapse-item" href="#">Tahun Akademik</a>
+            <a class="collapse-item" href="inputjadwal.html">Jadwal Kuliah</a>
+            <a class="collapse-item" href="khsadm.html">KHS</a>
+            <a class="collapse-item" href="perwalianadm.html">KRS</a>
+            <a class="collapse-item" href="kurikulum.html">Kurikulum</a>
           </div>
         </div>
       </li>
@@ -84,15 +85,10 @@
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Master:</h6>
-            <a class="collapse-item" href="#">Mahasiswa</a>
-            <a class="collapse-item" href="#">Dosen</a>
-            <a class="collapse-item" href="#">Gedung</a>
-            <a class="collapse-item" href="#">Grade Nilai</a>
-            <a class="collapse-item" href="#">Kepala Bagian</a>
-            <a class="collapse-item" href="#">Konsentrasi</a>
-            <a class="collapse-item" href="#">Prodi</a>
-            <a class="collapse-item" href="#">Ruangan</a>
-            <a class="collapse-item" href="#">Tahun Angkatan</a>
+            <a class="collapse-item" href="mahasiswa.html">Mahasiswa</a>
+            <a class="collapse-item" href="dosen.html">Dosen</a>
+            <a class="collapse-item" href="prodi.html">Prodi</a>
+            <a class="collapse-item" href="ruang.html">Ruangan</a>
           </div>
         </div>
       </li>
@@ -105,9 +101,9 @@
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Jadwal :</h6>
-            <a class="collapse-item" href="#">Biaya Kuliah</a>
-            <a class="collapse-item" href="#">Form Pembayaran</a>
-            <a class="collapse-item" href="#">Laporan Keuangan</a>
+            <a class="collapse-item" href="biaya.html">Biaya Kuliah</a>
+            <a class="collapse-item" href="Pembayaran.html">Form Pembayaran</a>
+            <a class="collapse-item" href="laporan.html">Laporan Keuangan</a>
           </div>
         </div>
       </li>
@@ -117,7 +113,6 @@
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Pengguna Sistem</span></a>
       </li>
-
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
@@ -223,27 +218,28 @@
           
           <!-- awal konten utama -->
           <!-- Begin Page Content -->
-        <div class="container-fluid mb-5">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
               <div class="card shadow">
-                <div class="card-header">Pembayaran</div>
+                <div class="card-header">Tambah Data Ruangan</div>
                 <div class="card-body">
+                  <form action="">
                     <div class="form-group row">
-                        <label for="" class="col-sm-2 col-form-label">NIM</label>
-                        <div class="">
+                        <label for="" class="col-sm-2 col-form-label text-right">NIM</label>
+                        <div class="col-sm-9">
                           <input type="text" name="#" class="form-control">
                         </div>
                       </div>
                     <div class="form-group row">
-                        <label for="" class="col-sm-2 col-form-label">Nama</label>
-                        <div class="">
+                        <label for="" class="col-sm-2 col-form-label text-right">Nama</label>
+                        <div class="col-sm-9">
                           <input type="text" name="#" class="form-control">
                         </div>
                     </div>
                     <div class="form-group row">
-                      <label for="" class="col-sm-2 my-auto">Semester</label>
-                      <div class="">
+                      <label for="" class="col-sm-2 my-auto col-form-label text-right">Semester</label>
+                      <div class="col-sm-9">
                         <input type="text" name="#" class="form-control">
                       </div>
                     </div>
@@ -254,13 +250,13 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group row">
-                                <label for="" class="col-sm-2 col-form-label">Tanggal Transaksi</label>
+                                <label for="" class="col-sm-4 col-form-label text-right">Tanggal Transaksi</label>
                                 <div class="">
                                   <input type="date" name="#" class="form-control">
                                 </div>
                               </div>
                               <div class="form-group row">
-                                <label for="" class="col-sm-2 my-auto">Jenis Pembayaran</label>
+                                <label for="" class="col-sm-4 my-auto text-right">Jenis Pembayaran</label>
                                 <select class="form-control" style="width: 20%;" name="" id="">
                                     <option nama="#" value="">Pendaftaran</option>
                                     <option nama="#" value="">UPP</option>
@@ -272,7 +268,7 @@
                                 </select>
                                 </div>
                               <div class="form-group row">
-                                <label for="" class="col-sm-2 col-form-label">Jumlah Bayar</label>
+                                <label for="" class="col-sm-4 col-form-label text-right">Jumlah Bayar</label>
                                 <div class="">
                                   <input type="text" name="#" class="form-control" style="width: 200%;">
                                 </div>
@@ -281,15 +277,16 @@
                     </div>
                     
                         <hr class="sidebar-divider">
-                        <div class="">
+                        <div class="text-right">
                             <button type="submit" class="btn btn-primary mb-2">Simpan</button>
                             <button type="submit" class="btn btn-light mb-2">Batal</button>
                         </div>
-                    </div>  
+                      </form>
+                    </div>
+                  </div>  
                 </div>
+                <div class="col-md-2"></div>
             </div>
-        </div>
-        </div>
         <!-- akhir konten utama -->
 
         </div>
