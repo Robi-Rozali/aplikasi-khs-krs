@@ -13,12 +13,14 @@
   <title>Sistem Informasi Akademik STMIK</title>
 
   <!-- Custom fonts for this template-->
-  <link href="Admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="../Admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="Admin/css/sb-admin-2.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/custom.css">
+  <link href="../Admin/css/sb-admin-2.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom.css">
+  <!-- datatable -->
+  <link href="../Admin/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -32,10 +34,7 @@
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.html">
-        <div class="sidebar-brand-icon">
-          <img src="img/stmik.png" class="d-inline" style="width: 50px" alt="logo">
-        </div>
-        <div class="sidebar-brand-text text-left tulisan-logo">Sistem Informasi Akademik</div>
+        <img src="../img/logo.png" class="d-inline" style="width: 200px" alt="logo">
       </a>
     
 
@@ -44,7 +43,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="dashboard.html">
+        <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -61,16 +60,17 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
-          <span>Perwalian</span>
+          <span>Akademik</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Custom Components:</h6>
-            <a class="collapse-item" href="#">Pooling SAT</a>
-            <a class="collapse-item" href="perwalian.html">FRS(Perwalian)</a>
-            <a class="collapse-item" href="perubahan.html">Perubahan FRS</a>
-            <a class="collapse-item" href="pilihkelas.html">Pilih Kelas</a>
-            <a class="collapse-item" href="krs.html">Kartu Rencana Studi</a>
+            <a class="collapse-item" href="#">Jadwal Kuliah</a>
+            <a class="collapse-item" href="#">KHS</a>
+            <a class="collapse-item" href="#">KRS</a>
+            <a class="collapse-item" href="#">Mata Kuliah</a>
+            <a class="collapse-item" href="#">Registrasi</a>
+            <a class="collapse-item" href="#">Tahun Akademik</a>
           </div>
         </div>
       </li>
@@ -79,13 +79,20 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
           <i class="fas fa-fw fa-wrench"></i>
-          <span>Nilai</span>
+          <span>Master Data</span>
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Nilai:</h6>
-            <a class="collapse-item" href="utilities-color.html">Nilai Persemester</a>
-            <a class="collapse-item" href="utilities-border.html">Daftar Nilai Sementara</a>
+            <h6 class="collapse-header">Master:</h6>
+            <a class="collapse-item" href="#">Mahasiswa</a>
+            <a class="collapse-item" href="#">Dosen</a>
+            <a class="collapse-item" href="#">Gedung</a>
+            <a class="collapse-item" href="#">Grade Nilai</a>
+            <a class="collapse-item" href="#">Kepala Bagian</a>
+            <a class="collapse-item" href="#">Konsentrasi</a>
+            <a class="collapse-item" href="prodi.html">Prodi</a>
+            <a class="collapse-item" href="#">Ruangan</a>
+            <a class="collapse-item" href="#">Tahun Angkatan</a>
           </div>
         </div>
       </li>
@@ -93,26 +100,14 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-folder"></i>
-          <span>Jadwal</span>
+          <span>Keuangan</span>
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Jadwal :</h6>
-            <a class="collapse-item" href="jadwal_kuliah.html">Jadwal Kuliah</a>
-            <a class="collapse-item" href="jadwal_ujian.html">Jadwal Ujian</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsestatuspembayaran" aria-expanded="true" aria-controls="collapseUtilities">
-          <i class="fas fa-fw fa-wrench"></i>
-          <span>Status Pembayaran</span>
-        </a>
-        <div id="collapsestatuspembayaran" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Nilai:</h6>
-            <a class="collapse-item" href="utilities-color.html">Riwayat Pembayaran </a>
-            <a class="collapse-item" href="utilities-border.html">Tagihan/Invoice</a>
+            <a class="collapse-item" href="#">Biaya Kuliah</a>
+            <a class="collapse-item" href="#">Form Pembayaran</a>
+            <a class="collapse-item" href="#">Laporan Keuangan</a>
           </div>
         </div>
       </li>
@@ -120,14 +115,7 @@
       <li class="nav-item">
         <a class="nav-link" href="charts.html">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
-      </li>
-
-      <!-- Nav Item - Tables -->
-      <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
+          <span>Pengguna Sistem</span></a>
       </li>
 
       <!-- Divider -->
@@ -227,123 +215,54 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid mb-5">
+        <div class="container-fluid">
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">PRODI</h1>
+          </div>
+          
+          <!-- awal konten utama -->
           <div class="row">
             <div class="col-md-12">
               <div class="card shadow">
-                <div class="card-header">Pilih Kelas</div>
+                <div class="card-header"><a href="tambahprodi.html" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</a></div>
                 <div class="card-body">
-
-                  <div class="form-group row">
-                    <label for="foto" class="col-sm-3">
-                      NIM
-                    </label>
-                    <div class="col-sm-5 teks-hitam">
-                      A3.1700040
+                  <div class="table-responsive">
+                     <table class="table table-bordered" id="dataTable">
+                      <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>Kode Prodi</th>
+                            <th>Nama Prodi</th>
+                            <th>Peminatan</th>
+                            <th>Ketua Prodi</th>
+                            <th>NIDN</th>
+                            <th>Foto Ketua Prodi</th>
+                            <th >AKSI</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>A2</td>
+                            <td>Teknik Informatika</td>
+                            <td>Network</td>
+                            <td>Nunu</td>
+                            <td>A2.1700081</td>
+                            <td>.....</td>
+                            <td>
+                              <div class="btn btn-success btn-sm"><i class="fas fa-search-plus"></i></div>
+                              <div class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></div>
+                              <div class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                     </div>
-                    <div class="col-sm-4"></div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="foto" class="col-sm-3">
-                      Nama
-                    </label>
-                    <div class="col-sm-5 teks-hitam">
-                      ROBI ROZALI
-                    </div>
-                    <div class="col-sm-4"></div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="foto" class="col-sm-3">
-                      Jurusan / Prog
-                    </label>
-                    <div class="col-sm-5 teks-hitam">
-                     Sistem Informasi / S1
-                    </div>
-                    <div class="col-sm-4"></div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="foto" class="col-sm-3">
-                      Tahun Akademik / Per
-                    </label>
-                    <div class="col-sm-5 teks-hitam">
-                     2020/2021 / 1
-                    </div>
-                    <div class="col-sm-4"></div>
-                  </div>
-                   <div class="form-group row">
-                    <label for="foto" class="col-sm-3 teks-hitam">
-                      Kelas Yang Dipilih :
-                    </label>
-                    <div class="col-sm-4"></div>
-                  </div>
-                   <div class="form-group row">
-                    <label for="foto" class="col-sm-3 bg-gradient-primary teks-link">
-                      No
-                    </label>
-                    <div class="col-sm-5 teks-hitam">
-                      1
-                    </div>
-                    <div class="col-sm-4"></div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="foto" class="col-sm-3 bg-gradient-primary teks-link">
-                      Kode Mata Kuliah
-                    </label>
-                    <div class="col-sm-5 teks-hitam">
-                      FT3012
-                    </div>
-                    <div class="col-sm-4"></div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="foto" class="col-sm-3 bg-gradient-primary teks-link">
-                      Mata Kuliah
-                    </label>
-                    <div class="col-sm-5 teks-hitam">
-                      Algoritma dan Struktur Data
-                    </div>
-                    <div class="col-sm-4"></div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="foto" class="col-sm-3 bg-gradient-primary teks-link">
-                      Kelas yang Dipilh
-                    </label>
-                    <div class="col-sm-5 teks-hitam">
-                      Kelas Belum Anda Pilih
-                    </div>
-                    <div class="col-sm-4"></div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="foto" class="col-sm-3 bg-gradient-primary teks-link">
-                      Kelas Yang Tersedia
-                    </label>
-                    <div class="col-sm-9 teks-hitam">
-                      <div class="form-check">
-                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                      <label class="form-check-label" for="exampleRadios1">Kelas: A | Ruang: R4 | Hari: Sabtu | Jam: 13.00-15.00 | Kapasitas : 40 Orang | Sisa : 30 Orang </label>
-                      </div>
-                      <div class="form-check">
-                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                      <label class="form-check-label" for="exampleRadios2">Kelas: B | Ruang: R3 | Hari: Rabu | Jam: 13.00-15.00 | Kapasitas : 40 Orang | Sisa : 28 Orang </label>
-                      </div>
-                    </div>
-                    <div class="col-sm-4"></div>
-                  </div>
-                  <div class="teks-hitam">
-                        Apakah Pilihan Anda Sudah Tepat ?
-                        </div>
-                        <hr class="sidebar-divider">
-                        <div class="">
-                            <button type="submit" class="btn btn-primary mb-2">Simpan</button>
-                            <button type="submit" class="btn btn-light mb-2">Batal</button>
-                      </div>
-                      </div>
-                    </div>  
-                  </div>
-
                 </div>
-              </div>
-            </div>  
+            </div>
           </div>
+          <!-- akhir konten utama -->
 
         </div>
       <!-- End of Main Content -->
@@ -389,21 +308,25 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="Admin/vendor/jquery/jquery.min.js"></script>
-  <script src="Admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../Admin/vendor/jquery/jquery.min.js"></script>
+  <script src="../Admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="Admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../Admin/vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="Admin/js/sb-admin-2.min.js"></script>
+  <script src="../Admin/js/sb-admin-2.min.js"></script>
 
   <!-- Page level plugins -->
-  <script src="Admin/vendor/chart.js/Chart.min.js"></script>
+  <script src="../Admin/vendor/chart.js/Chart.min.js"></script>
+  <!-- datatable -->
+  <script src="../Admin/vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../Admin/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  <script src="../Admin/js/demo/datatables-demo.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="Admin/js/demo/chart-area-demo.js"></script>
-  <script src="Admin/js/demo/chart-pie-demo.js"></script>
+  <script src="../Admin/js/demo/chart-area-demo.js"></script>
+  <script src="../Admin/js/demo/chart-pie-demo.js"></script>
 
 </body>
 
